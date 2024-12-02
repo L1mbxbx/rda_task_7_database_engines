@@ -23,7 +23,7 @@ CREATE TABLE ProductDescription (
     CountryID INT,
     FOREIGN KEY (ProductID) REFERENCES Products(ID) ON DELETE CASCADE,
     FOREIGN KEY (CountryID) REFERENCES Countries(ID) ON DELETE CASCADE
-) ENGINE=MyISAM;
+) ENGINE=InnoDB;
 
 -- Create a table for storing logs. For now we don't need to save them, but we need to implement functionality (Columns: ID, Time, LogRecord)
 CREATE TABLE Logs (
