@@ -12,7 +12,7 @@ CREATE TABLE Products (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     Name VARCHAR (50),
     Amount INT
-)
+);
 
 -- Create a table for caching GeoIP data (Columns: ID, IP Range, CountryID)
 CREATE TABLE GeoIP (
